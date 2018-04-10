@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+J:\ZhuBaJie_Pro\32.Beijin_Inductance_proximity_can_pro\CAN_git_pvb_v08_software\Can_Stm32f105rbt6_branch_v01\USER\CAN_v08pcb_v01.uvprojx
+Project File Date:  07/15/2017
+
+<h2>Output:</h2>
+Build target 'CAN'
+compiling main.c...
+main.c(32): warning:  #223-D: function "CAN2_Mode_Init" declared implicitly
+    CAN2_Mode_Init(CAN_SJW_1tq,CAN_BS2_8tq,CAN_BS1_9tq,16,mode);//CAN初始化环回模式,波特率125Kbps    
+main.c(47): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                  Can2_Send_Msg(trig_canbuf,0x040100b5,CAN_RTR_Data);//发送8个字?                 ^
+main.c(73): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                     Can2_Send_Msg(trig_canbuf2,0x040100b5,CAN_RTR_Data);//发送8个字?                ^
+main.c(98): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                     Can2_Send_Msg(trig_canbuf3,0x040100b5,CAN_RTR_Data);//发送8个字?                ^
+main.c(129): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                Can2_Send_Msg(notrig_canbuf,0x040100b5,CAN_RTR_Data);//发送8个字?                                                               ^
+main.c(153): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                                Can2_Send_Msg(trig_canbuf,0x040100b5,CAN_RTR_Data);//发送8个字?                                                                                 ^
+main.c(180): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                                         Can2_Send_Msg(trig_canbuf2,0x040100b5,CAN_RTR_Data);//发送8个字?                                                                                        ^
+main.c(205): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                                 Can2_Send_Msg(trig_canbuf3,0x040100b5,CAN_RTR_Data);//发送8个字?                                                                                ^
+main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=10716 RO-data=344 RW-data=52 ZI-data=1836  
+FromELF: creating hex file...
+"..\OBJ\CAN3.axf" - 0 Error(s), 8 Warning(s).

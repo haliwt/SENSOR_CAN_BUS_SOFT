@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: HALI H, FDI, LIC=7YK12-9JEAW-GQX0H-W2LJ1-TS54T-YSY3A
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      CMSIS_AGDI.dll V1.21.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\32.Beijin_Inductance_proximity_can_pro\sensor_can_bus_soft\USER\CAN_v08pcb_v01.uvprojx
+Project File Date:  02/06/2018
+
+<h2>Output:</h2>
+Build target 'CAN'
+compiling main.c...
+main.c(39): warning:  #223-D: function "CAN2_Mode_Init" declared implicitly
+    CAN2_Mode_Init(CAN_SJW_1tq,CAN_BS2_8tq,CAN_BS1_9tq,16,mode);//CAN初始化环回模式,波特率125Kbps    
+main.c(54): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                Can2_Send_Msg(trig_canbuf,ExtendID_2,CAN_RTR_Data);//发送8个字?                                 ^
+main.c(81): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                      Can2_Send_Msg(trig_canbuf2,ExtendID_2,CAN_RTR_Data);//发送8个字?                        ^
+main.c(107): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                         Can2_Send_Msg(trig_canbuf3,ExtendID_2,CAN_RTR_Data);//发送8个字?                        ^
+main.c(137): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                Can2_Send_Msg(notrig_canbuf,ExtendID_2,CAN_RTR_Data);//发送8个字?                                                               ^
+main.c(160): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                        Can2_Send_Msg(trig_canbuf,ExtendID_2,CAN_RTR_Data);//发送8个字?                                                                         ^
+main.c(187): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                                         Can2_Send_Msg(trig_canbuf2,ExtendID_2,CAN_RTR_Data);//发送8个字?                                                                                        ^
+main.c(212): warning:  #223-D: function "Can2_Send_Msg" declared implicitly
+                                                                                 Can2_Send_Msg(trig_canbuf3,ExtendID_2,CAN_RTR_Data);//发送8个字?                                                                                ^
+main.c: 8 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling led.c...
+compiling can.c...
+..\HARDWARE\CAN\can.c(123): warning:  #550-D: parameter "exframe" was set but never used
+  u8 Can_Receive_Msg(u8 *buf,u32 exframe)
+..\HARDWARE\CAN\can.c: 1 warning, 0 errors
+compiling can2.c...
+compiling sensor.c...
+compiling iic.c...
+compiling lcd.c...
+compiling rs232.c...
+compiling AT24CXX.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_usart.c...
+linking...
+Program Size: Code=10700 RO-data=344 RW-data=52 ZI-data=1836  
+FromELF: creating hex file...
+"..\OBJ\CAN3_10.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\32.Beijin_Inductance_proximity_can_pro\sensor_can_bus_soft\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
